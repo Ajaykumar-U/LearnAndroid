@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SqliteDataBase.SQLActivity1">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DataBase Activity"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="13dp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Id"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+    <TextView
+        android:id="@+id/tvSurnam"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SurName"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <TextView
+        android:id="@+id/tvMarks"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Marks"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSurnam" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Id"
+        android:inputType="number"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@id/tvId"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/etId"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter SurName"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@id/tvSurnam"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/etMarks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Marks"
+        android:inputType="number"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@id/tvSurnam"
+        app:layout_constraintTop_toBottomOf="@id/etSurname"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnAddDataToDB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Add Data"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnShowDataFromDB"
+        app:layout_constraintTop_toBottomOf="@id/etMarks" />
+
+    <Button
+        android:id="@+id/btnShowDataFromDB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Show Data"
+        android:textSize="24dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toRightOf="@id/btnAddDataToDB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMarks" />
+
+    <Button
+        android:id="@+id/btnUpdateDataInDB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Update"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnDeleteDataInDB"
+        app:layout_constraintTop_toBottomOf="@id/btnAddDataToDB" />
+
+    <Button
+        android:id="@+id/btnDeleteDataInDB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Delete"
+        android:textSize="24dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toRightOf="@id/btnUpdateDataInDB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnShowDataFromDB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

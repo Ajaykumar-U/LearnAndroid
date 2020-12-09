@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Learn Android</string>
+
+    <string name="dayOneTasks">
+        <b>1. What is Android?\n</b>
+        <i>✓ Android is an open source and Linux-based Operating System for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies.\n\n</i>
+        <b>2. How many versions are out there?\n</b>
+        <i>✓ There are 18 versions from Android-1(Base Version) to Android-Q\n\n</i>
+        <b>3. Basic details about all versions.\n</b>
+        <i>✓ Basic details about all versions.\n\n</i>
+        <b>4. What is android sdk?\n</b>
+        <i>✓ Android SDK. A software development kit that enables developers to create applications for the Android platform. The Android SDK includes sample projects with source code, development tools, an emulator, and required libraries to build Android applications.\n\n</i>
+        <b>5. What do you mean by jar and apk?\n</b>
+        <i>✓ A JAR is a package file format typically used to aggregate many Java class files and associated metadata and resources into one file for distribution. JAR files are archive files that include a Java-specific manifest file. They are built on the ZIP format and typically have a .jar file extension.\n</i>
+        <i>✓ Android Package is the package file format used by the Android, and a number of other Android-based operating systems for distribution and installation of mobile apps, mobile games and middleware.\n\n</i>
+        <b>6. Different API levels for android.\n</b>
+        <i>✓ API Level is an integer value that uniquely identifies the framework API revision offered by a version of the Android platform.\n</i>
+    </string>
+
+    <string name="dayTwoTasks">
+        <b>1. What is JDK?\n</b>
+        <i>✓ The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc) and other tools needed in Java development.\n\n</i>
+        <b>2. What is JRE?\n</b>
+        <i>✓ JRE stands for “Java Runtime Environment” and may also be written as “Java RTE.” The Java Runtime Environment provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), core classes, and supporting files.\n\n</i>
+        <b>3. Why java is preferred for android.\n</b>
+        <i>✓ Java is preferred for many reasons for developing android applications.\n
+        ✓ Java is secure (no threat to security because nothing gets executed outside the JVM)\n
+        ✓ Rich set of core features.\n
+        ✓ Object oriented paradigms.\n
+        ✓ JVM (optimised for android): a virtual machine makes life of a developer /programmer easier. And android uses dalvik, a VM optimized to suit android needs.\n
+        ✓ Frameworks and Classes: outside the core library, java has many frameworks and classes for features like networking, threading, IO operations and thus, programmers can leverage these qualities in their apps.\n
+        ✓ Open source nature of java and android.\n\n</i>
+        <b>4. Basics (No coding just intro )\n</b>
+        <i>✓ Inheritance\n
+        ✓ Encapsulation\n
+        ✓ Polymorphism\n
+        ✓ Abstraction\n\n</i>
+        <b>5. Setup your systems with dream of Android.\n\n</b>
+        <b>6. Now Use OOPS Concept in android(Using the first Activity you created)\n</b>
+    </string>
+
+    <string name="dayThreeTasks">
+        <b>1. What is an Activity?\n</b>
+        <i>✓ An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class takes care of creating a window for you in which you can place your UI with setContentView(View).\n\n</i>
+        <b>2. What is Activity LifeCycle?\n</b>
+        <i>✓ Activity LifeCycle is the stages that an activity over come starting from creating an Activity to Destroy an Activity\n
+        ✓ Activity class provides a core set of seven callbacks: onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy() and onRestart \n\n</i>
+        <b>3. Which life cycle methods are API specific(added in latest apis).\n</b>
+        <i>✓  API Specific?\n\n</i>
+        <b>4. Exactly what happens after each and every life cycle method?\n</b>
+        <i>✓ onCreate(): method, you perform basic application startup logic that should happen only once for the entire life of the activity.\n
+        ✓ onStart(): call makes the activity visible to the user, as the app prepares for the activity to enter the foreground and become interactive.\n
+        ✓ onResume(): is the state in which the app interacts with the user\n
+        ✓ onPause(): indicates that the activity is no longer in the foreground (though it may still be visible if the user is in multi-window mode).\n
+        ✓ onStop(): When your activity is no longer visible to the user, it has entered the Stopped state, and the system invokes the onStop() callback.\n
+        ✓ onDestroy(): is called before the activity is destroyed.\n
+        ✓ onRestart(): once the activity is placed in back stack and again the Activity is started then this method is called followed by onStart()\n \n</i>
+        <b>5. What is Android Manifest file?\n</b>
+        <i>✓ The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.\n\n</i>
+        <b>6. How to make an Activity Launcher activity?\n</b>
+        <i>✓ Go to AndroidManifest. xml in the root folder of your project and change the Activity name which you want to execute first. If you are using Android Studio and you might have previously selected another Activity to launch. Click on Run > Edit configuration and then make sure that Launch default Activity is selected.\n\n</i>
+        <b>7. What is intent Filter(brief idea).\n</b>
+        <i>✓ An intent filter is an expression in an apps manifest file that specifies the type of intents that the component would like to receive. For instance, by declaring an intent filter for an activity, you make it possible for other apps to directly start your activity with a certain kind of intent\n\n</i>
+        <b>8. What is a layout?\n</b>
+        <i>✓ A layout defines the structure for UI(User Interface) in an app. All elements in the layout are built using a hierarchy of View and ViewGroup objects. A View usually draws something the user can see and interact with. Whereas a ViewGroup is an invisible container that defines the layout structure for View and other ViewGroup objects.\n\n</i>
+        <b>9. How many different layouts are there and each ones use case.\n</b>
+        <i>✓ LinearLayout : is a ViewGroup that aligns all children in a single direction, vertically or horizontally\n
+        ✓ RelativeLayout : is a ViewGroup that displays child views in relative positions\n
+        ✓ AbsoluteLayout : allows us to specify the exact location of the child views and widgets\n
+        ✓ TableLayout : is a view that groups its child views into rows and columns\n
+        ✓ FrameLayout : is a placeholder on screen that is used to display a single view\n
+        ✓ ScrollView : is a special type of FrameLayout in that it allows users to scroll through a list of views that occupy more space than the physical display. The ScrollView can contain only one child view or ViewGroup, which normally is a LinearLayout\n
+        ✓ ListView : is a view group that displays a list of scrollable item\n
+        ✓ GridView : is a ViewGroup that displays items in two-dimensional scrolling grid. The items in the grid come from the ListAdapter associated with this view\n
+        ✓ ConstraintLayout : is a android. view. ViewGroup which allows you to position and size widgets in a flexible way.\n\n</i>
+        <b>10. Which is base class for all views.\n</b>
+        <i>✓ Base class for all views is ViewGroup\n</i>
+        <b>11. What is ViewGroup.\n</b>
+        <i>✓ A ViewGroup is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers.\n\n</i>
+        <b>12. Put some buttons imageview and setup their onClick.\n</b>
+    </string>
+
+    <string name="dayFourTasksI">
+        <b>1. What do you mean by UI Thread?\n</b>
+        <i>✓ The UIThread is the main thread of execution for your application. This is where most of your application code is run. All of your application components (Activities, Services, ContentProviders, BroadcastReceivers) are created in this thread, and any system calls to those components are performed in this thread.\n\n</i>
+        <b>2. Can i put network calls on UI Thread? \n</b>
+        <i>✓ No, network calls may cause a delay...earlier versions of android allowed this, but newer versions will throw a network on main thread exception\n\n</i>
+        <b>3. How to access UI Thread?\n</b>
+        <i>✓ activity.runOnUiThread(new Runnable() {\n
+                     @Override\n
+                     public void run() {\n
+                         //change UI\n
+                     }\n
+            });\n\n</i>
+        <b>4. What is Caching? Do picasso use caching?\n</b>
+        <i>✓ Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly. Picasso uses Caching\n\n</i>
+        <b>5. Do volley and Retrofit use caching?\n</b>
+        <i>✓ Volley uses Caching but Retrofit does not use\n\n</i>
+        <b>6. Picasso\n</b>
+        <i>✓ Picasso is an image library for Android. Its created and maintained by Square, and caters to image loading and processing. It simplifies the process of displaying images from external locations.\n\n</i>
+    </string>
+
+    <string name="dayFourTasksII">
+        <b>7. Retrofit</b>
+        <i>✓ Retrofit is a REST Client library (Helper Library) used in Android and Java to create an HTTP request and also to process the HTTP response from a REST API.\n\n</i>
+    </string>
+
+    <string name="dayEightTasks">
+        <b>1. What is a Fragment?\n</b>
+        <i>✓ A Fragment represents a behavior or a portion of user interface in a FragmentActivity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running. \n\n</i>
+        <b>2. What is Fragment LifeCycle?\n</b>
+        <i>✓ Here is the list of methods which you can to override in your fragment class:\n
+        ✓ onAttach(): The fragment instance is associated with an activity instance.The fragment and the activity is not fully initialized. Typically you get in this method a reference to the activity which uses the fragment for further initialization work.\n
+        ✓ onCreate(): The system calls this method when creating the fragment. You should initialize essential components of the fragment that you want to retain when the fragment is paused or stopped, then resumed.\n
+        ✓ onCreateView(): The system calls this callback when its time for the fragment to draw its user interface for the first time. To draw a UI for your fragment, you must return a View component from this method that is the root of your fragments layout. You can return null if the fragment does not provide a UI.\n
+        ✓ onActivityCreated(): is called after the onCreateView() method when the host activity is created. Activity and fragment instance have been created as well as the view hierarchy of the activity. At this point, view can be accessed with the findViewById() method. example. In this method you can instantiate objects which require a Context object\n
+        ✓ onStart(): The onStart() method is called once the fragment gets visible.\n
+        ✓ onResume(): Fragment becomes active.\n
+        ✓ onPause(): The system calls this method as the first indication that the user is leaving the fragment. This is usually where you should commit any changes that should be persisted beyond the current user session.\n
+        ✓ onStop(): Fragment going to be stopped by calling onStop()\n
+        ✓ onDestroyView(): Fragment view will destroy after call this method\n
+        ✓ onDestroy(): onDestroy() called to do final clean up of the fragments state but Not guaranteed to be called by the Android platform.\n
+        ✓ onDetach(): The fragement instance is removed with activity instance.\n\n</i>
+        <b>3. What is app permission? What is runtime permission and how to handle it?\n</b>
+        <i>✓ The purpose of a permission is to protect the privacy of an Android user. Android apps must request permission to access sensitive user data (such as contacts and SMS), as well as certain system features (such as camera and internet). Depending on the feature, the system might grant the permission automatically or might prompt the user to approve the request.\n
+            ✓ Runtime Permissions in Android 6.0 Marshmallow (Android Development Patterns Ep 3) Runtime permissions are a new feature in Android 6.0 Marshmallow that allow you to request permissions at runtime, when it matters rather than at install time.\n</i>
+    </string>
+
+    <string name="daySixTask">
+        <i>1. Use RecyclerView to show employee’s I-Card.\n</i>
+        <i>2. Click on any I-Card in RecyclerView open another activity where it shows same I-Card.\n</i>
+        <i>3.  Now put button on your I card and open the same activity using onclick of this button to open same card.\n</i>
+        <i>4. Use Header and Footer of ListView.\n</i>
+        <i>5. Sort Listview Items alphabetically.\n</i>
+        <i>6. Try to implement endless listView.</i>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

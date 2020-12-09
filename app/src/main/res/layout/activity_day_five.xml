@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFiveActivity">
+
+    <TextView
+        android:id="@+id/tvHeaderDayFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day-5 Activities"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="13dp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderDayFive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/day5TvPara1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/day5TvPara2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@id/day5TvPara1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/day5TvPara3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@id/day5TvPara2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageday5"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintTop_toBottomOf="@id/day5TvPara3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/day5TvPara4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@id/imageday5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <EditText
+                android:id="@+id/etday5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:hint="Applies for Implicit and Explicit"
+                app:layout_constraintTop_toBottomOf="@id/day5TvPara4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/day5TvPara5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@id/etday5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/day5TvPara6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:clickable="true"
+                app:layout_constraintTop_toBottomOf="@id/day5TvPara5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
